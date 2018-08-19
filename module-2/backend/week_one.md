@@ -30,20 +30,24 @@ Delete is used to delete**
 
   ```ruby
   get '/horses' do
+    @count = 1
     erb :index
   end
   ```
-  get '/horses' do
-    @horses = Horse.all
-    erb :"horses/index"
-  end
+
 
 7. In the same code block, how would I pass a local variable `name` with a value of `Mr. Ed` to the view?
+
+get '/horses' do
+  locals:{name:'Mr.Ed'}
+  erb :index
+end
 
 8. What's the purpose of ERB?
 **embedded ruby. to embed ruby cody into HTML to make it dynamic so it can render situation specific information to a webpage.**
 
 9. Why do I need a development AND test database?
+**test database starts empty and wipes clean. so you know whats in database. **
 
 10. What is CRUD and why is it important?
 **Create, Read, Update, Delete. all the functions necessary for a complete database.**
@@ -70,8 +74,8 @@ DELETE /restaurants/:id deletes one restaurant
 GET /restaurants/edit edits one restaurant**
 
 16. What's a migration?
-
-17. When you create a migration, does it automatically modify your database?
+  **building the database, the command to build a table and its columns**
+17. When you create a migration, does it automatically modify your database? **nothing changes until the command rake db:migrate occurs**
 
 18. How does a model relate to a database?
 **model creates an object for the database to store**
@@ -116,7 +120,7 @@ activities = {
 How would I add 'granola bar' to things you should have when hiking?
 **activities[:hiking][:supplies]+= 'granola bar'**
 
-24. What are the 4 Principles of OOP? Give a one sentence explanation of each.
+24. What are the 4 Principles of OOP? Give a one sentence explanation of each. **Abstraction: complexity is hidden from user. Encapsulation putting related code together, SRP, organization. Inheritance everything inherits methods for a superclass. Code organization can be constructed to include methods in another class. Polymorphism can call the same method on the different object types even though it is doing different things behind the scenes.**
 
 
 ### Self Assessment:
