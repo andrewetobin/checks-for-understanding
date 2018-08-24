@@ -20,7 +20,7 @@ What are some methods you can call on `Team`? If these methods aren't defined in
 **We have access to all of the ActiveRecord methods becuase they are being inherited into class Team. We have access to them by calling the ActiveRecord methods on attributes of the Team class, including any relational connections class Team has to other classes.**
 
 3. Assume that in your database, a team has the following attributes: "id", "name", owner_id". How would you find the name of a team with an id of 4? Assuming your class only included the code from question 2, how could you find the owner of the same team?
-**JOINS team ON team where team_id=owner_id**
+**team = Team.find(4) to find the team with the id of 4. team.name  Owner.find(team.owner_id)**
 4. Assume that you added a line to your `Team` class as follows:
 
 ```ruby
@@ -30,7 +30,7 @@ end
 ```
 
 Now how would you find the owner of the team with an id of 4?
-**Owner.joins(Team.team_id=4)**
+**Team.find(4).owner**
 5. In a database that's holding students and teachers, what will be the relationship between students and teachers? Draw the schema diagram.
 **Depending on the school setup, elementary school where students are with same teacher all day, teacher has_many :students and student belongs_to :teacher. After elementary school where students have multiple teachers throughout the day, teacher has_many :students and student has_many :teachers.**
 6. Define foreign key, primary key, and schema.
