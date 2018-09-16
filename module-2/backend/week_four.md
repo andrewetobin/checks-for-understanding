@@ -1,5 +1,4 @@
 ## Week Four Recap
-
 ### Instructions
 Fork or re-pull this repository. Answer the questions to the best of your ability.
 

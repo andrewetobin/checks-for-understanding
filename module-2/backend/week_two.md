@@ -50,7 +50,6 @@ Now how would you find the owner of the team with an id of 4?
 7. Describe and diagram the relationship between patients and doctors. **patient belongs_to :doctor, Doctor has_many :patients**
 8. Describe and diagram the relationship between museums and original_paintings.
 9. What could you see in your code that would make you think you might want to create a partial? **when different websites utulize the same exact code**
-
 ### Self Assessment:
 Choose One:
 
