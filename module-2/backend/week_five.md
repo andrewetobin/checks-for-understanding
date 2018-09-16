@@ -2,7 +2,7 @@
 
 Re-pull from this repository. Answer the questions to the best of your ability. Try to answer them with limited amount of external research. These questions cover the majority of what we've learned this week (which is a TON!).
 
-Note: When you're done, submit a PR.
+Note: When you're done, submit a PR
 
 ### Week 5 Questions
 1. How do we make flash messages display on a page?

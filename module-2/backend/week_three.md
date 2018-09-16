@@ -1,4 +1,5 @@
 ## Week Three Recap
+
 ### Instructions
 Fork this repository. Be sure to pull the latest changes to your local repo. Answer the questions to the best of your ability.
 
